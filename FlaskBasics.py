@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/<name>')
 def hello_world(name='Flask'):
-  return 'Hello World! from {}'.format(name)
+  return f'Hello World! from {name}'
 
 
 @app.route('/add/<int:num1>/<int:num2>')
